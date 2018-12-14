@@ -1,8 +1,4 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, request, logging
-from flask_mysqldb import MySQL
-from wtforms import Form, StringField, TextAreaField, PasswordField, validators, SelectField
-from passlib.hash import sha256_crypt
-from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
 import numpy as np
 from resources.modelling import data_enconding
