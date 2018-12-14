@@ -1,8 +1,15 @@
 {% extends 'layout.html' %}
 {% block body %}
 {{ super() }}
-<div class="jumbotron text-center" >
-        <h1>Welcome to Mushrooms4All!</h1>
-        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis rerum, cupiditate possimus ipsam laborum, sunt doloribus vitae nesciunt perspiciatis molestias sit ab fuga, maxime ad nostrum numquam iusto at quis.</p>
+<div class="container-full-bg" >
+    <div class="jumbotron text-center">
+            <img src="{{ url_for('static',filename='fungus.png') }}" class="img-fluid mb-5 d-block mx-auto" width="300" height="450"/>  
+            <h1>Welcome to Mushrooms4All!</h1>
+            <p class="lead"><i><b>Mushrooms4all is an organization that aims to promote the collection and use of mushrooms
+                    for feeding purposes.</b> </i></p>
+            <p class="lead"><i>We encourage you to use our new classifier feature so you stay safe while looking for the yummiest shroomies!. </i></p>
+    </div>
     </div>
 {% endblock %}
+
+<i>This text is italic.</i>

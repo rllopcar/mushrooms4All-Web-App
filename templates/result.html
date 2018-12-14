@@ -1,5 +1,16 @@
 {% extends 'layout.html' %}
 {% block body %}
-{{ super() }}
-HOLAAAA
-{% endblock %} 
+    
+<div class="container jumbotron text-center">
+    {% if prediction[0] == 0 %} 
+        <img src="{{ url_for('static',filename='edible.png') }}" class="img-fluid mb-5 d-block mx-auto" width="200" height="200"/>  
+        <h1 class="">EDIBLE!</h1>
+        <h2 class="">Enjoy your shroomie, don't forget to share it!</h2>
+    {% else %} 
+        <img src="{{ url_for('static',filename='poison.png') }}" class="img-fluid mb-5 d-block mx-auto" width="200" height="200"/>
+        <h1 class="">POISONOUS!</h1>
+        <h2 class="">Careful! This shroom could be harmful for humans. Keep looking and good luck :)</h2>
+    {% endif %}
+   
+    </div>
+    {% endblock %}
