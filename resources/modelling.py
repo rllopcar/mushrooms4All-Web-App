@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-mushrooms_aux = pd.read_csv("mushrooms_clean.csv")
+mushrooms_aux = pd.read_csv("mushrooms_clean_2.csv")
 
 mushrooms = mushrooms_aux.iloc[:,2:]
 def data_enconding(data):

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+{{ super() }}
+<script>
+  function format_link(link){
+        if (link)
+          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+        else
+          return "";
+      }  
+  CsvToHtmlTable.init({
+    csv_path: '../mushrooms_clean_2.csv',
+    element: 'table-container', 
+    allow_download: true,
+    csv_options: {separator: ';', delimiter: '"'},
+    datatables_options: {"paging": true}
+  });
+</script>
+
+
+
+
+
+{% endblock %}
